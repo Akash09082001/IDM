@@ -1009,10 +1009,6 @@ video {
   background-image: url(assets/banner-img/hitech.webp);
 }
 
-.bg-fdheromob {
-  background-image: url(assets/hero-img/fd-hero-mob1.webp);
-}
-
 .bg-cover {
   background-size: cover;
 }
@@ -1525,10 +1521,6 @@ video {
   .md\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  }
-
-  .md\:bg-fdbanner {
-    background-image: url(assets/hero-img/hero.webp);
   }
 
   .md\:bg-\[top_right\] {

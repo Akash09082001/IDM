@@ -107,5 +107,4 @@ function prevImage() {
 function autoScroll() {
     nextImage()
 }
-
 setInterval(autoScroll, 4000);

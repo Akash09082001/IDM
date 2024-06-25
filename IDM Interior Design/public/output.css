@@ -931,10 +931,6 @@ video {
   border-radius: 0.75rem;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
 .border {
   border-width: 1px;
 }
@@ -993,6 +989,10 @@ video {
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 
+.bg-eligibleBg {
+  background-image: url(assets/hero-img/elibilityBg.webp);
+}
+
 .bg-fdarrow {
   background-image: url(assets/banner-img/sky-right.webp);
 }
@@ -1011,10 +1011,6 @@ video {
 
 .bg-fdhitech {
   background-image: url(assets/banner-img/hitech.webp);
-}
-
-.bg-eligibleBg {
-  background-image: url(assets/hero-img/elibilityBg.webp);
 }
 
 .bg-cover {

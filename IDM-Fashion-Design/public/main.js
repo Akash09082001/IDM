@@ -108,3 +108,32 @@ function autoScroll() {
     nextImage()
 }
 setInterval(autoScroll, 4000);
+
+const modal = document.querySelector(".modal");
+const modalContent = document.querySelector(".modal-content");
+
+const openModal = () => {
+    modal.classList.remove("-top-full");
+    modal.classList.add("top-0");
+}
+
+const closeModal = () => {
+    modal.classList.add("-top-full");
+    modal.classList.remove("top-0");
+}
+
+if (modal) {
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            closeModal();
+        }
+    });
+
+    window.addEventListener("click", (event) => {
+        if (event.target === modalContent) {
+            closeModal();
+        }
+    });
+} else {
+    console.error("Modal element not found.");
+}

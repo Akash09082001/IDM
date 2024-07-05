@@ -42,6 +42,7 @@ module.exports = {
                 fdhitech: "url(assets/banner-img/hitech.webp)",
                 eligibleBg: "url(assets/hero-img/elibilityBg.webp)",
 
+
             },
         },
     },

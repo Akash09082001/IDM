@@ -92,10 +92,12 @@
                             </li>
                         </ul>
                         <div class="hidden lg:flex flex-grow-0 gap-3">
-                            <button class="flex w-fit px-4 py-2 text-sm md:text-base bg-brand text-white rounded-md">
+                            <a id="enquire2" aria-label="enquire2" href="#hero"
+                                class="flex w-fit px-4 py-2 text-sm md:text-base bg-brand text-white rounded-md">
                                 Enquire Now
-                            </button>
-                            <button class="flex w-fit px-4 py-2 text-sm md:text-base bg-brand text-white rounded-md">
+                            </a>
+                            <button id="apply" aria-label="apply" onclick="applyNow()"
+                                class="flex w-fit px-4 py-2 text-sm md:text-base bg-brand text-white rounded-md">
                                 Apply Now
                             </button>
                         </div>
@@ -187,25 +189,37 @@
             <div class="w-full hidden sm:flex text-center text-sm md:text-base">
                 <ul class="flex w-fit space-x-4 md:space-x-8 mx-auto">
                     <li class="w-fit">
-                        <a href="#"
-                            class="inline-flex items-center w-fit px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">Study
-                            Abroad
+                        <a href="#program"
+                            class="inline-flex items-center w-fit px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">
+                            About Program
                         </a>
                     </li>
                     <li class="w-fit">
-                        <a href="#"
+                        <a href="#highlight"
                             class="inline-flex items-center w-fit px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">
                             Highlights
                         </a>
                     </li>
                     <li class="w-fit">
-                        <a href="#"
+                        <a href="#studyAbroad"
+                            class="inline-flex items-center w-fit px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">Study
+                            Abroad
+                        </a>
+                    </li>
+                    <li class="w-fit">
+                        <a href="#curriculum"
                             class="inline-flex items-center w-fit px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">Course
                             Structure
                         </a>
                     </li>
                     <li class="w-fit">
-                        <a href="#"
+                        <a href="#events"
+                            class="inline-flex items-center w-fit px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">
+                            Events
+                        </a>
+                    </li>
+                    <li class="w-fit">
+                        <a href="#placement"
                             class="inline-flex items-center w-fit px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">
                             Placements
                         </a>
@@ -219,7 +233,7 @@
 
         <div class="flex h-auto w-full flex-col">
 
-            <section class="flex w-full h-auto lg:max-h-[800px]">
+            <section id="hero" class="flex w-full h-auto lg:h-screen lg:max-h-[830px]">
                 <div class="flex w-full h-full bg-eligibleBg bg-cover bg-[top_left_20%] lg:bg-left bg-no-repeat">
                     <div
                         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full h-fit items-center px-5 py-5 max-w-7xl mx-auto my-auto">
@@ -236,15 +250,15 @@
                             <div class="flex w-full flex-col gap-3 items-center md:items-start">
                                 <span
                                     class="text-white text-lg md:text-xl lg:text-2xl xl:text-3xl text-center md:text-left">
-                                    Unlock Opportunities to Study, Work, & Settle Abroad
+                                    Your gateway to Study, Work and Settle abroad
                                 </span>
                                 <span
                                     class="inline-flex items-center rounded-lg bg-pink-100 px-4 py-1 text-sm md:text-lg lg:text-xl font-medium text-pink-700 ring-1 ring-inset ring-pink-700/10">
-                                    Begin Your Fashion Career Journey Today
+                                    Take the first step towards a Career in Interior Design
                                 </span>
                             </div>
                             <div class="hidden md:grid md:grid-cols-2 lg:grid-cols-3 w-full gap-3">
-                                <button id="download" aria-label="download"
+                                <button id="download" aria-label="download" onclick="openModal()"
                                     class="bg-brand hover:bg-pink-800 transition-all text-white py-3 text-balance rounded-lg flex gap-3 items-center justify-center">
                                     <span>Download Brochure</span>
                                     <span>
@@ -263,11 +277,14 @@
                             </div>
                         </div>
                         <div class="flex w-full h-fit justify-center md:justify-end">
-                            <div class="flex flex-col sm:max-w-xs w-full p-5 gap-3 bg-white rounded-2xl">
+                            <div class="flex flex-col sm:max-w-xs md:max-w-sm w-full p-5 gap-3 bg-white rounded-2xl">
                                 <div class="flex w-full">
                                     <strong class="text-xl">Enquire Now</strong>
                                 </div>
-                                <div class="flex w-full gap-5 h-[500px]">
+                                <div class="flex w-full h-[480px]">
+                                    <div class="npf_wgts w-full" data-height="480px"
+                                        data-w="61d35cee7fb99011a08bc4072c4f87f2">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -275,7 +292,7 @@
                 </div>
             </section>
 
-            <section class="flex w-full h-auto">
+            <section id="program" class="flex w-full h-auto">
                 <div class="flex w-full p-5 md:py-8 lg:py-10 xl:py-14 max-w-7xl mx-auto">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
 
@@ -303,7 +320,7 @@
                                 </p>
                             </div>
                             <div class="grid md:grid-cols-2 lg:grid-cols-3 w-full gap-3">
-                                <button id="download1" aria-label="download1"
+                                <button id="download1" aria-label="download1" onclick="openModal()"
                                     class="bg-brand hover:bg-pink-800 transition-all text-white py-3 text-balance rounded-lg flex gap-3 items-center justify-center">
                                     <span>Download Brochure</span>
                                     <span>
@@ -333,7 +350,7 @@
                 </div>
             </section>
 
-            <section class="flex w-full h-auto ">
+            <section id="highlight" class="flex w-full h-auto ">
                 <div class="flex w-full bg-fdhightlight bg-cover">
                     <div
                         class="flex flex-col w-full p-5 md:py-8 lg:py-10 xl:py-14 gap-5 md:gap-8 lg:gap-10 max-w-7xl mx-auto">
@@ -464,7 +481,7 @@
                 </div>
             </section>
 
-            <section class="flex w-full h-auto bg-fdglobal">
+            <section id="studyAbroad" class="flex w-full h-auto bg-fdglobal">
                 <div class="flex w-full bg-fdarrow bg-no-repeat bg-[bottom_right] md:bg-[top_right]">
                     <div
                         class="flex flex-col w-full p-5 md:py-8 lg:py-10 xl:py-14 gap-5 md:gap-8 lg:gap-10 max-w-7xl mx-auto">
@@ -495,7 +512,7 @@
                                     </p>
                                 </div>
                                 <div class="grid md:grid-cols-2 lg:grid-cols-3 w-full gap-3">
-                                    <button id="download2" aria-label="download2"
+                                    <button id="download2" aria-label="download2" onclick="openModal()"
                                         class="bg-brand hover:bg-pink-800 transition-all text-white py-3 text-balance rounded-lg flex gap-3 items-center justify-center">
                                         <span>Download Brochure</span>
                                         <span>
@@ -685,7 +702,7 @@
                 </div>
             </section>
 
-            <section class="flex w-full h-auto bg-gray-50">
+            <section id="events" class="flex w-full h-auto bg-gray-50">
                 <div
                     class="flex flex-col w-full p-5 md:py-8 lg:py-10 xl:py-14 gap-5 md:gap-8 lg:gap-10 max-w-7xl mx-auto">
                     <div class="flex w-full flex-col items-center md:items-start gap-1 ">
@@ -860,7 +877,7 @@
                 </div>
             </section>
 
-            <section class="flex w-full h-auto bg-fdhitech bg-center bg-no-repeat">
+            <section class="flex w-full h-auto bg-fdhitech bg-center bg-cover bg-no-repeat">
                 <div class="flex w-full px-5 py-5 md:py-8 lg:py-10 xl:py-14 max-w-7xl mx-auto">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
 
@@ -905,7 +922,7 @@
                 </div>
             </section>
 
-            <section class="flex w-full h-auto">
+            <section id="curriculum" class="flex w-full h-auto">
                 <div
                     class="flex flex-col w-full p-5 md:py-8 lg:py-10 xl:py-14 gap-5 md:gap-8 lg:gap-10 max-w-7xl mx-auto">
                     <div class="flex w-full flex-col items-center md:items-start gap-1 ">
@@ -2009,7 +2026,7 @@
                                 </li>
                             </ul>
                             <div class="flex w-full">
-                                <button id="download3" aria-label="download3"
+                                <button id="download3" aria-label="download3" onclick="openModal()"
                                     class="bg-brand hover:bg-pink-800 transition-all text-white py-3 px-5 text-balance rounded-lg flex gap-3 items-center justify-center">
                                     <span>Download Brochure</span>
                                     <span>
@@ -2047,7 +2064,7 @@
                                 of final placement.
                             </p>
                             <div class="flex w-full">
-                                <button id="download4" aria-label="download4"
+                                <button id="download4" aria-label="download4" onclick="openModal()"
                                     class="bg-yellow-400 transition-all text-black py-3 px-5 text-balance rounded-lg flex gap-3 items-center justify-center">
                                     <span>Download Brochure</span>
                                     <span>
@@ -2066,7 +2083,7 @@
 
             </section>
 
-            <section class="flex w-full h-auto bg-gray-50">
+            <section id="placement" class="flex w-full h-auto bg-gray-50">
                 <div
                     class="flex flex-col w-full p-5 md:py-8 lg:py-10 xl:py-14 gap-5 md:gap-8 lg:gap-10 max-w-7xl mx-auto">
                     <div class="flex w-full flex-col items-center md:items-start gap-1 ">
@@ -2128,7 +2145,7 @@
             </section>
 
             <section class="flex w-full">
-                <div class="flex flex-col w-full md:py-8 lg:py-10 xl:py-14 gap-5 md:gap-8 lg:gap-10">
+                <div class="flex flex-col w-full py-5 md:py-8 lg:py-10 xl:py-14 gap-5 md:gap-8 lg:gap-10">
                     <div class="flex w-full">
                         <h2
                             class="text-2xl md:text-3xl lg:text-4xl font-bold text-center flex w-full items-center justify-center text-black">
@@ -2359,8 +2376,8 @@
                                             <ul class="text-sm md:text-base list-disc pl-3">
                                                 <li>
                                                     <strong>STEP -1</strong>
-                                                    <p>Register yourself on the link : <a href=""
-                                                            class="text-brand">Apply Here</a></p>
+                                                    <p>Register yourself on the link : <a onclick="applyNow()"
+                                                            class="text-brand cursor-pointer">Apply Here</a></p>
                                                 </li>
                                                 <li>
                                                     <strong>STEP -2</strong>
@@ -2802,10 +2819,48 @@
 
     </main>
 
+    <section class="modal flex w-full h-full transition-all -top-full absolute z-50 bg-black bg-opacity-30">
 
+        <div class="modal-content  flex w-full max-w-7xl mx-auto items-center justify-center">
+
+            <div class="flex w-full flex-col max-w-sm mx-auto bg-white p-5 gap-5 rounded-lg">
+                <div class="flex w-full relative items-center">
+                    <h3 class="text-xl font-bold">Enter details to get brochure</h3>
+                    <button id="al" aria-label="close" onclick="closeModal()"
+                        class="w-fit h-fit p-1.5 bg-brand text-white absolute flex right-0 rounded-md border">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path fill-rule="evenodd"
+                                d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex w-full h-[480px]">
+                    <div class="npf_wgts w-full" data-height="480px" data-w="61d35cee7fb99011a08bc4072c4f87f2">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+
+    <script
+        type="text/javascript"> var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = "https://widgets.nopaperforms.com/emwgts.js"; document.body.appendChild(s); </script>
+
+    <script type="text/javascript">
+        var npf_d = 'https://itmidm.nopaperforms.com';
+        var npf_c = '5056';
+        var npf_m = '1';
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://track.nopaperforms.com/js/track.js";
+        document.body.appendChild(s);
+    </script>
 
 </body>
 
